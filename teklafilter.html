@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="filter">
+            <div class="item">
+                <label for="Category">Category</label>
+                <select name="Category">
+                    <option value="">---</option>
+                    <option value="Arts and culture">Arts and culture</option>
+                    <option value="Family attractions">Family attractions</option>
+                    <option value="Food&wine">Food&wine</option>
+                    <option value="Historical sites">Historical sites</option>
+                    <option value="Outdoor activities">Outdoor activities</option>
+                    <option value="Adventure and recreation">Adventure and recreation</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Health and wellness">Health and wellness</option>
+                    <option value="Winter sports and recreation">Winter sports and recreation</option>
+                    <!-- Add more categories as needed... -->
+                </select>
+            </div>
+    
+            <div class="item">
+                <label for="City">City</label>
+                <select name="City">
+                    <option value="">---</option>
+                    <option value="Tbilisi">Tbilisi</option>
+                    <option value ="Batumi">Batumi</option>
+                    <option value ="Mestia">Mestia</option>
+                    <option value ="Bakuriani">Bakuriani</option>
+                    <option value ="Kutaisi">Kutaisi</option>
+                    <option value ="Mtskheta">Mtskheta</option>
+                   
+                    <!-- Add more cities as needed... -->
+                </select>
+            </div>
+    
+            <div class="item">
+                <label for="Season">Season</label>
+                <select name="Season">
+                    <option value="">---</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Summer">Summer</option>
+                </select>
+            </div>
+    
+            <div class="item submit">
+                <button>Search</button>
+            </div> 
+        </form>
+    
+        <div class="countResults">
+            Found <b id="count">98</b> results
+        </div>
+    
+    <div id="list">
+        <div class="item">
+            <img src="images/nationalmuseum.png">
+            <div class="title">Georgian National Museum</div>
+        </div>
+        <div class="item">
+            <img src="images/tbilisiopera.png">
+            <div class="title">Tbilisi Opera And Ballet State</div>
+        </div>
+        <div class="item">
+            <img src="images/khareba.png">
+                <div class="title">Wine Bar Khareba</div>
+                
+        </div>              
+        <div class="item">
+            <img src="images/purissakhli.png">
+            <div class="title">Puris Sakhli</div>
+        </div>
+        <div class="item">
+            <img src="images/vino.png">
+                <div class="title">Vino Underground</div>
+        </div>              
+        <div class="item">
+            <img src="images/lomi.png">
+            <div class="title">Shavi Lomi</div>
+        </div>
+        <div class="item">
+            <img src="images/mtatsminda.png">
+                <div class="title">Mtatsminda Park</div>
+        </div>              
+        <div class="item">
+            <img src="images/zoo.png">
+                <div class="title">Tbilisi Zoo</div>
+        </div>              
+        <div class="item">
+            <img src="images/vino.png">
+                <div class="title">Vino Underground</div>
+        </div>              
+        <div class="item">
+            <img src="images/turtle.png">
+                <div class="title">Turtle Lake</div>
+        </div>              
+        <div class="item">
+            <img src="images/Lisi Lake.png">
+                <div class="title">Lisi Lake</div>
+        </div>     
+        <div class="item">
+            <img src="images/tbg.png">
+                <div class="title">The Tbilisi Botanical Garden</div>
+        </div>     
+        <div class="item">
+            <img src="images/mg.png">
+                <div class="title">Narikala Fortress and Mother Georgia Statue</div>
+        </div>     
+        <div class="item">
+            <img src="images/narikala.png">
+                <div class="title">Narikala Fortress</div>
+        </div>       
+        <div class="item">
+            <img src="images/sioni.png">
+                <div class="title">Sioni Cathedral</div>
+        </div>  
+        <div class="item">
+            <img src="images/metexi.png">
+                <div class="title">Metekhi Church of the Assumption</div>
+        </div>         
+        <div class="item">
+            <img src="images/sameba.png">
+                <div class="title">Sameba Cathedral (Holy Trinity Cathedral of Tbilisi)</div>
+        </div>     
+        <div class="item">
+            <img src="images/mama.png">
+                <div class="title">Jvaris Mama Church</div>
+        </div>  
+        <div class="item">
+            <img src="images/anch.png">
+                <div class="title">Anchiskhati Basilica</div>
+        </div>     
+        <div class="item">
+            <img src="images/tbilisimall.png">
+                <div class="title">Tbilisis Mall</div>
+        </div>     
+        <div class="item">
+            <img src="images/galeria.png">
+                <div class="title">Galleria Tbilisi</div>
+        </div>     
+        <div class="item">
+            <img src="images/bdt.png">
+                <div class="title">Batumi Drama Theatre</div>
+        </div>        
+        <div class="item">
+            <img src="images/asm.png">
+                <div class="title">Adjara State Museum</div>
+        </div>        
+        <div class="item">
+            <img src="images/alphabet.png">
+                <div class="title">Alphabet Tower</div>
+        </div>        
+        <div class="item">
+            <img src="images/piazza.png">
+                <div class="title">Piazza Square</div>
+        </div>        
+        <div class="item">
+            <img src="images/fish.png">
+                <div class="title">Batumi Fish Market</div>
+        </div>        
+        
+        <!--es ar damiweri jer! wellnesi mxolod amis qvemot 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->     
+        <div class="item">
+            <img src="images/botanical.png">
+                <div class="title">Batumi Botanical Garden</div>
+        </div>        
+    <div class="item">
+            <img src="images/oldtown.png">
+                <div class="title">Batumi Old Town</div>
+        </div>        
+        <div class="item">
+            <img src="images/gonio.png">
+                <div class="title">Gonio-Apsaros Fortress</div>
+        </div>        
+        <div class="item">
+            <img src="images/medea.png">
+                <div class="title">Medea Statue</div>
+        </div>        
+        <div class="item">
+            <img src="images/cable car.png">
+                <div class="title">Argo Cable Car</div>
+        </div>        
+        <div class="item">
+            <img src="images/port.png">
+                <div class="title">Batumi Sea Port</div>
+        </div>        
+        <div class="item">
+            <img src="images/mtirala.png">
+                <div class="title">Mtirala National Park</div>
+        </div>        
+        <div class="item">
+            <img src="images/water.png">
+                <div class="title">Water Sports</div>
+        </div>        
+        <div class="item">
+            <img src="images/cycling.png">
+                <div class="title">Batumi Boulevard Cycling</div>
+        </div>        
+        <div class="item">
+            <img src="images/aqua.png">
+                <div class="title">Batumi Aqua Park</div>
+        </div>        
+        <div class="item">
+            <img src="images/dolphin.png">
+                <div class="title">Batumi Dolphinarium</div>
+        </div>        
+        <div class="item">
+            <img src="images/playground.png">
+                <div class="title">Batumi Boulevard Playground</div>
+        </div>        
+        <div class="item">
+            <img src="images/botanical.png">
+                <div class="title">Batumi Botanical Garden Treetop Walkway</div>
+        </div>         <div class="item">
+            <img src="images/nuri.png">
+                <div class="title">Nuri Guli Lake Park</div>
+        </div>       
+        <div class="item">
+        <img src="images/batumimall.png">
+            <div class="title">Batumi Mall</div>
+        </div>      
+    <div class="item">
+        <img src="images/saphire.png">
+            <div class="title">Sapphire Lounge</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/kari.png">
+         <div class="title">Kari Bakuriani</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/park.png">
+         <div class="title">Bakuriani Amusement Park</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/rope.png">
+         <div class="title">Kokhta-Mitarbi Rope Park</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/snowmobile.png">
+         <div class="title">Snowmobile Adventure Tours</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/hiking.png">
+         <div class="title">Kokhta Mountain Hiking Trail</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/ski.png">
+         <div class="title">Bakuriani Ski Resort</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/quad.png">
+         <div class="title">Chitakhevi Quad Biking</div>
+     </div>                            
+    <div class="item">
+        <img src="images/kokhta.png">
+         <div class="title">Kokhta-Mitarbi Ski Jumping Center</div>
+     </div>                            
+          
+     <div class="item">
+        <img src="images/spa.png">
+         <div class="title">Bakuriani Spa & Wellness Center</div>
+     </div>                            
+    <div class="item">
+        <img src="images/suvenir.png">
+         <div class="title">Bakuriani Souvenir Market</div>
+     </div>                            
+    <div class="item">
+        <img src="images/snowboard.png">
+         <div class="title">Kokhta-Mitarbi Snow Park</div>
+     </div>                            
+     <div class="item">
+        <img src="images/ice.png">
+         <div class="title">Bakuriani Ice Skating Rink</div>
+     </div>                            
+     <div class="item">
+        <img src="images/hills.png">
+         <div class="title">Bakuriani Sledging Hills</div>
+     </div>                            
+     <div class="item">
+        <img src="images/gelati.png">
+         <div class="title">Gelati Monastery</div>
+     </div>                            
+     <div class="item">
+        <img src="images/museum.png">
+         <div class="title">Kutaisi State Historical Museum</div>
+     </div>                            
+     <div class="item">
+        <img src="images/mesxi.png">
+         <div class="title">Meskhishvili Theatre</div>
+     </div>                            
+     <div class="item">
+        <img src="images/market.png">
+         <div class="title">Kutaisi Central Market</div>
+     </div>                            
+     <div class="item">
+        <img src="images/winecellar.png">
+         <div class="title">Wine Cellar "Winery Khareba</div>
+     </div>                                                      
+     <div class="item">
+        <img src="images/sataplia.png">
+         <div class="title">Sataplia Nature Reserve</div>
+     </div>                            
+     <div class="item">
+        <img src="images/kbg.png">
+         <div class="title">Kutaisi Botanical Garden</div>
+     </div>                            
+     <div class="item">
+        <img src="images/kpark.png">
+         <div class="title">Kutaisi Park</div>
+     </div> 
+     <div class="item">
+        <img src="images/promete.png">
+         <div class="title"> Prometheus Cave (Kumistavi Cave) </div>
+     </div>                            
+     <div class="item">
+        <img src="images/Bagrati.png">
+         <div class="title">Bagrati Cathedral</div>
+     </div>                            
+     <div class="item">
+        <img src="images/Promete1.png">
+         <div class="title">Prometheus Cave</div>
+     </div>                            
+     <div class="item">
+        <img src="images/nokalakevi.png">
+         <div class="title">Nokalakevi Archaeological Site</div>
+     </div>                            
+     <div class="item">
+        <img src="images/kbg.png">
+         <div class="title">Kutaisi Botanical Garden</div>
+     </div>                                                    
+     <div class="item">
+        <img src="images/rafting.png">
+         <div class="title">Rafting on the Rioni Rive</div>
+     </div>                                      
+     <div class="item">
+        <img src="images/karva.png">
+         <div class="title">Kutaisi Mall</div>
+     </div>                            
+     <div class="item">
+        <img src="images/ethnomuseum.png">
+         <div class="title">Mestia Historical-Ethnographic Museum</div>
+     </div>                            
+     <div class="item">
+        <img src="images/umuseum.png">
+         <div class="title">Ushguli Architecture and Ethnography Museum</div>
+     </div>                            
+     <div class="item">
+        <img src="images/chuberi.png">
+         <div class="title">Lunch at Chuberi Restaurant</div>
+     </div>                            
+     <div class="item">
+        <img src="images/taste.png">
+         <div class="title">Wine Tasting at Amrauli Winery, Ushguli</div>
+     </div>                            
+     <div class="item">
+        <img src="images/hatsvali.png">
+         <div class="title">Hatsvali Adventure Park</div>
+     </div>                            
+     <div class="item">
+        <img src="images/village.png">
+         <div class="title">Chazhashi Village, Ushguli</div>
+     </div>                            
+     <div class="item">
+        <img src="images/latali.png">
+         <div class="title">Latali Church of St. George</div>
+     </div>                            
+     <div class="item">
+        <img src="images/tetnuldi.png">
+         <div class="title">Tetnuldi Ski Resort</div>
+     </div>                            
+     <div class="item">
+        <img src="images/paragliding.png">
+         <div class="title">Paragliding from Mount Zuruldi, Ushguli</div>
+     </div>                            
+     <div class="item">
+        <img src="images/horse.png">
+         <div class="title">Svaneti Horse Riding</div>
+     </div>                            
+     <div class="item">
+        <img src="images/bikingmestia.png">
+         <div class="title">Mountain Biking in Ushguli Valley</div>
+     </div>                            
+     <div class="item">
+        <img src="images/jeep.png">
+         <div class="title">Svaneti Jeep Tours</div>
+     </div>    
+     <div class="item">
+        <img src="images/mineral.png">
+         <div class="title">Mineral Springs in Ushguli</div>
+     </div>    
+     <div class="item">
+        <img src="images/bangu.png">
+         <div class="title">Spa Day at Hotel Banguriani</div>
+     </div>    
+     <div class="item">
+        <img src="images/.png">
+         <div class="title">Mestia Market Square</div>
+     </div>    
+     <div class="item">
+        <img src="images/craft.png">
+         <div class="title">Ushguli Craft Shops</div>
+     </div>  
+     <div class="item">
+        <img src="images/salobie.png">
+         <div class="title">Salobie Restauran</div>
+     </div>      
+     <div class="item">
+        <img src="images/muk.png">
+         <div class="title">Wine Cellar at Château Mukhrani</div>
+     </div>      
+     <div class="item">
+        <img src="images/fortress.png">
+         <div class="title">Mtskheta Fortress</div>
+     </div>      
+     <div class="item">
+        <img src="images/jvarip.png">
+         <div class="title">Jvari Park</div>
+     </div>      
+     <div class="item">
+        <img src="images/arch.png">
+         <div class="title">Mtskheta Archaeological Museum</div>
+     </div>      
+     <div class="item">
+        <img src="images/mmarket.png">
+         <div class="title">Mtskheta Local Artisans Market</div>
+     </div>  
+     <div class="item">
+        <img src="images/Sveti.png">
+         <div class="title">Svetitskhoveli Cathedral</div>
+     </div>      
+     <div class="item">
+        <img src="images/jvari.png">
+         <div class="title">Jvari Monastery</div>
+     </div>      
+     <div class="item">
+        <img src="images/shio.png">
+         <div class="title">Shio-Mgvime Monastery Complex</div>
+     </div>
+     <div class="item">
+        <img src="images/national.png">
+         <div class="title">Mtskheta National Park</div>
+     </div>                                     
+                                      
+          
+
+           
+    
+    <script src="teklafilter.js"></script>
+</body>
+</html>
+
+
+
